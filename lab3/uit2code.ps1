@@ -1,0 +1,1 @@
+& C:/Users/Adi/AppData/Local/conda/conda/envs/Laboratories/python.exe -m PyQt5.uic.pyuic -o D:\Facultate\Laborator\AI\lab3\UI_MainWindow.py D:\Facultate\Laborator\AI\lab3\lab3.ui

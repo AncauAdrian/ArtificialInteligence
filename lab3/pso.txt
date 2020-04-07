@@ -1,0 +1,36 @@
+Din ce am inteles eu:
+1. Generezi populatia de particule
+2. Ii imparti pe cartiere.
+Ex:
+gen
+population = [Andrei, Gigica, Mandruta, Vivi, Aglaia]
+neighborhoods[0] = [1,2,3]
+neighbordhoods[1] = [0,4]
+deci Andrei e vecin cu Aglaia, iar Gigica cu Mandruta si Vivi
+
+3. La fiecare iteratie faci urmatoarele
+3. 1 Cel mai bun vecin al fiecarei particule 
+3. 2 Schimbi velcoitatea fiecarei particule dupa formula profului (unde folosesti cel mai bun vecin ca de aia l-ai calculat)
+3. 3 Updatezi pozitia fiecarei particule (in functie de velocitate ca de aia ai calculat)
+3. 4 Returnezi noua populatie 
+
+FAQ (le-am auzit des):
+1. CPLM e position?
+Position este cum tii tu informatia. Configuratia din labu 1 daca vreti. Cum ati avut la EA si astea o lista de permutari
+
+2. CPLM e velocity?
+velocity este o matrice de transformare oarecum. Ideea este ca trebuie sa aiba aceeasi structura ca si pozitia ca sa o poti schimba.
+ok, deci sa zicem ca tu ai particula urmatoare
+[[1 2],
+[3 4]]
+
+Tu vrei sa o updatezi. E clar ca trebuie sa o misti cu totul. Tu cand te misti din dormitor in living, nu misti doar capul ci iti misti tot corpul. Cum o misti pe asta e intrebare atunci. Pai aplici transformari liniare pe numerele alea. Cum aplici transformari liniare pe o matrice in cazul asta? cu alta matrice
+
+deci velocaitatea ta o sa arate tot asa
+[[x,y],
+[z,w]]
+si velocitatea o sa fie initializata cu 0 gen [[0,0],[0,0]]
+si o sa se transforme dupa formula profului
+
+3. Ce sunt best position si best fitness?
+Vedeti in exemplul profului functia anotata @pozition.setter. Retine doar cea mai buna pozitie din istoria unei particule
