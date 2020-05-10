@@ -39,6 +39,8 @@ class NeuralNetwork:
     def feedforward(self):
         self.layer1 = sigmoid(np.dot(self.input, self.weights1))
         self.output = sigmoid(np.dot(self.layer1, self.weights2))
+
+        print(self.weights1.shape)
         
 
 

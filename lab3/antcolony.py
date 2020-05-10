@@ -7,7 +7,6 @@ from random import random, choice
 
 
 class Ant:
-
     def __init__(self, sqSize):
         """
         Creates an ant
